@@ -30,25 +30,10 @@ a{
 	margin: 0 auto;
 }
 
-.font-15{
-	font-size: 15px;
-}
-.font-17{
-	font-size: 17px;
-}
-.font-20{
-	font-size: 20px;
-}
-.font-25{
-	font-size: 25px;
-}
-.font-50{
-	font-size: 50px;
-}
 /** Header section css **/
 header{
 	background:var(--secondary);
-	height:520px;
+	height:100%;
 }
 nav{
 	border-bottom:2px solid #4E596C;
@@ -59,7 +44,9 @@ nav{
 	justify-content: space-between;
 	align-items: center;
 }
-
+nav .fa-bars{
+	display: none;
+}
 nav ul li{
 	display: inline;
 	padding:0px 20px;
@@ -403,4 +390,207 @@ footer i{
 	color:#fff;
 	padding: 0px 10px;
 	font-size:20px;
+}
+
+
+
+/*############### Responsive CSS #######################*/
+
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (max-width: 601px) {
+	
+	/** Header section css **/
+nav .fa-bars{
+	display: block;
+	color: white;
+	cursor: pointer;
+	font-size: 28px;
+}
+.menubar{
+	width: 100%;
+	display: flex; justify-content: space-between;
+}
+nav .navbar{
+	justify-content: start;
+	align-items: start;
+	flex-direction: column
+}
+nav .menu {
+	margin-top: 20px;
+}
+
+.none{
+	display: none;
+	transition: 2s all ease;
+	-webkit-transition: 2s all ease;
+	-moz-transition: 2s all ease;
+	-ms-transition: 2s all ease;
+	-o-transition: 2s all ease;
+}
+nav ul li{
+	display: block;
+	padding:10px 0px;
+}
+
+.hero-area{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+header .hero-area h2{
+	font-weight:bold;
+	color: var(--white);
+	font-size: 27px;
+}
+.header_button .btn2{
+	margin-left:0px;
+	margin: 20px 0;
+	padding: 12px 46px;
+}
+.mobile_image img{
+	display: none;
+}
+
+/**services_section css**/
+
+
+#services_section  .Services_Section_small_border{
+	margin-left:22%;
+}
+
+.services{
+	flex-direction: column;
+}
+#services_section .content{
+	margin-top: 20px;
+}
+
+/** third_section css **/
+
+#third_section .row{
+	flex-direction: column;
+}
+.blank_Section{
+	display: none;
+}
+#third_section .content_wrap{
+	width: 100%;
+}
+#third_section .content_wrap h3{
+	font-size: 30px;
+	text-align: center;
+}
+#third_section .content{
+	margin-top:50px;
+}
+
+/** code_section css **/
+
+#code_section{
+	background: black;
+	color: white;
+	margin-top: 50px;
+}
+#code_section .row{
+	flex-direction: column;
+}
+
+#code_section p{
+	color: var(--white);
+}
+#code_section button{
+	margin-bottom: 20px;
+}
+#code_section img{
+	width: 100%;
+	margin-top: 30px;
+}
+/** Mobile Gallary section css **/
+
+#Mobile_Gallary .row{
+	flex-direction: column;
+}
+#Mobile_Gallary img{
+	width: 100%;
+}
+/** Mobile Showcase section css **/
+
+#Mobile_Showcase .row{
+	flex-direction: column;
+}
+
+#Mobile_Showcase .img1{
+	margin-left: 65px;
+}
+#Mobile_Showcase .img2{
+	margin-left: -20px;
+	position:absolute;
+
+}
+#Mobile_Showcase .img3{
+	margin-left: 180px;
+}
+/** video_section css **/
+#video_section{
+	margin-top: 20px;
+}
+
+#video_section .playbtn{
+
+	width:50px;
+	height:50px;
+
+}
+#video_section .content .playbtn i{
+	font-size:20px;
+	color:black;
+}
+#video_section p{
+	text-align: start;
+}
+
+/** available section css **/
+#available{
+	height: 100%;
+}
+#available .row{
+	flex-direction: column;
+}
+
+#available .mobile .img1{
+	width:155px;
+	margin-top:130px;
+	position:absolute;
+	z-index:2;
+}
+#available .mobile .img2{
+	width:115px;
+	margin-top:200px;
+	margin-left:150px;
+	position:relative;
+	z-index:1;
+}
+#available .mobile{
+	width: 100%;
+}
+#available .Now_Available{
+	width: 100%;
+}
+
+#available button{
+	margin: 30px 0px;
+}
+/** About Section css **/
+#about .row{
+	flex-direction: column;
+}
+/* Footer */
+footer{
+	height:100%;
+	padding: 10px 0px;
+}
+footer .row{
+	flex-direction: column;
+}
 }

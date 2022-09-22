@@ -13,9 +13,11 @@
       <nav>
         <div class="container">
           <div class="row navbar">
+            <div class="menubar">
             <img src="img/logo.png" class="logo" alt="logo" />
-
-            <ul>
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="menu">
               <li><a href="#">Home</a></li>
               <li><a href="#">Features</a></li>
               <li><a href="">Model</a></li>
@@ -52,7 +54,10 @@
     </header>
     <!-- Header_Section End -->
 
-    <!-- Services_Section_Start -->
+    <!-- Main Section -->
+
+    <main>
+          <!-- Services_Section_Start -->
     <section id="services_section">
       <div class="container">
         <div class="row">
@@ -308,6 +313,8 @@
       </div>
     </section>
 
+    </main>
+
     <!-- Footer -->
     <footer>
       <div class="container">
@@ -324,5 +331,14 @@
         </div>
       </div>
     </footer>
+
+
+    <script>
+     const bars = document.querySelector(".fa-bars");
+     const menu = document.querySelector(".menu");
+     bars.addEventListener('click', function(){
+        menu.classList.toggle("none")
+     })
+    </script>
   </body>
 </html>
